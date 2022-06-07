@@ -1,0 +1,94 @@
+.owl {
+  &-item {
+    padding: 27px;
+    position: relative;
+    text-align: center;
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 3px;
+      background: black;
+      transition: all 0.5s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+      background: $color-green;
+      display: block;
+    }
+  }
+
+  &-carousel &-item img {
+    width: unset;
+    display: unset;
+  }
+
+  &-dots {
+    display: none;
+  }
+
+  .slider .container &-carousel .item a img {
+    margin-bottom: 17px;
+  }
+  &-prev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @include media-breakpoint-only(xs) {
+      margin-bottom: 24px !important;
+    }
+  }
+
+  &-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 24px;
+    @include media-breakpoint-only(sm) {
+      margin-bottom: 0 ;
+    }
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next:active,
+.owl-carousel .owl-nav button.owl-prev:active,
+.owl-carousel button.owl-dot span:active {
+  @include media-breakpoint-only(xs) {
+    background-color: $color-light-green !important;
+  }
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  @include media-breakpoint-only(xs) {
+    background-color: $color-light-green !important;
+  }
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot span {
+  @include media-breakpoint-only(xs) {
+    font-size: 55px;
+    background-color: transparent;
+    background-size: contain;
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  position: relative;
+}

@@ -1,0 +1,80 @@
+.nav-link {
+  color: $color-white !important;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 !important;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 14px;
+    font-weight: 800;
+  }
+}
+
+.navbar-nav {
+  @include media-breakpoint-only(xs) {
+    display: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    justify-content: center;
+    flex-direction: row;
+    font-size: 44px;
+  }
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+}
+
+
+.card {
+  width: 212px;
+  border: transparent;
+  display: block;
+  color: $color-darkblue;
+
+  &-img-top {
+    width: unset;
+  }
+
+
+  &-body {
+    padding-top: 40px;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  &-text {
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+.bi-play-circle {
+  position: absolute;
+  left: 15px;
+}
+
+.col-md-4,
+.col-md-6,
+.col-sm-6 {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  @include media-breakpoint-only(xs) {
+    text-align: center;
+  }
+}

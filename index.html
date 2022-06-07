@@ -1,0 +1,642 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xd practical</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="app/css/style.css" />
+</head>
+
+<body>
+  <div class="toplinear-bg">
+    <header class="header">
+      <div class="scroll">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="app/images/Logo.png" alt="brand logo" />
+              </a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active me-4" aria-current="page" href="#">Sign In
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-2" href="#">Addition</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- ----------------------  herobanner block code ------------------------- -->
+    <section class="herobanner">
+      <div class="herobanner-video">
+        <div class="herobanner-videowrapper">
+          <video muted loop autoplay id="myVideo" class="herobanner-bgvideo">
+            <source src="app/scss/vendors/herobanner-background.mp4" type="video/mp4" />
+          </video></div>
+      </div>
+      <div class="herobanner-content">
+        <h2 class="herobanner-heading">THE MOST MEANINGFUL
+          GIFT ON EARTH</h2>
+        <h5 class="herobanner-subheading">Tribute makes it easy to create a collaborative video montage
+          that you can give as a gift on any important occasion.</h5>
+        <button class="btn btn--tribute" id="myBtn" onclick="myFunction()">START A TRIBUTE</button>
+      </div>
+    </section>
+    <!-- ----------------------  slider block code ------------------------- -->
+    <section class="slider">
+      <div class="container">
+        <div id="Section1" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake NewYork”</h2>
+        </div>
+        <div id="Section2" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake Mashale”</h2>
+        </div>
+        <div id="Section3" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake Cnn”</h2>
+        </div>
+        <div id="Section4" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake Today”</h2>
+        </div>
+        <div id="Section5" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake House”</h2>
+        </div>
+        <div id="Section6" class="slider-content">
+          <h2 class="slider-heading">“This gift is sure to be a keepsake66”</h2>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake NewYork”</h2>
+            <a href="javascript:void(0)" onclick="show('Section1');" class="slider-links"><img
+                src="images/New Yorker Logo.png" alt="logo" /></a>
+          </div>
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake Mashale”</h2>
+            <a href="javascript:void(0)" onclick="show('Section2');" class="slider-links"><img
+                src="images/Mashable_Logo.png" alt="logo" /></a>
+          </div>
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake Cnn”</h2>
+            <a href="javascript:void(0)" onclick="show('Section3');" class="slider-links"><img src="app/images/CNN Logo.png"
+                alt="logo" /></a>
+          </div>
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake Today”</h2>
+            <a href="javascript:void(0)" onclick="show('Section4');" class="slider-links"><img
+                src="images/Today Logo.png" alt="logo" /></a>
+          </div>
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake House”</h2>
+
+            <a href="javascript:void(0)" onclick="show('Section5');" class="slider-links"><img
+                src="images/Good Housekeeping Logo.png" alt="logo" /></a>
+          </div>
+          <div class="item">
+            <h2 class="slider-text">“This gift is sure to be a keepsake66”</h2>
+            <a href="javascript:void(0)" onclick="show('Section6');" class="slider-links"><img
+                src="images/USA Today Log.png" alt="logo" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="slider-bottom"></div>
+    </section>
+    <!-- ----------------------  works block code ------------------------- -->
+    <section class="works">
+      <div class=" container">
+        <h2 class="works-heading">HOW IT WORKS</h2>
+        <h4 class="works-subheading">Creating a Tribute is quick, easy and meaningful. See how easy below.</h4>
+        <div class="row">
+          <div class="col-md-4 works-card">
+            <a href="javascriptvoid(0)" class="card">
+              <img src="app/images/invite.png" class="card-img-top works-cardimg" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Invite Friends</h5>
+                <p class="card-text">Invite friends and family to join the celebration.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 works-card">
+            <a href="javascriptvoid(0)" class="card">
+              <img src="app/images/collect.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Collect Videos</h5>
+                <p class="card-text">Everyone gets a prompt, makes a video and uploads it.</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4 works-card">
+            <a href="javascriptvoid(0)" class="card">
+              <img src="app/images/compile.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Compile Tribute</h5>
+                <p class="card-text">Drag and drop the videos in the order you like and share!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tribute Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <video id="VisaChipCardVideo" width="450" controls>
+                  <source src="../app/scss/vendors/herobanner-background.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6 col-sm-6 works-howstart">
+            <a href="javascript:void(0)" class="btn btn--howwork" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal"><svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24"
+                fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+              </svg>&nbsp;&nbsp;HOW IT WORKS</a></div>
+          <div class="col-md-6 col-sm-6 works-start">
+            <button class="btn btn--secondary">START A TRIBUTE</button></div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------  occasion block code ------------------------- -->
+    <section class="occasion">
+      <div class="occasion-top"></div>
+      <div class="container">
+        <h2 class="occasion-heading">USE TRIBUTE FOR ALL OCCASIONS</h2>
+        <div class="row mb-5">
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Birthday Hover.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Birthday</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Wedding Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Wedding</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Graduation Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Graduation</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Get Well Soon Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Get Well Soon</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Work Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Work</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Anniversary.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Aniversary</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Thank You Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">Thank you</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <a href="javascript:void(0)" class="card occasion-card">
+              <img src="app/images/Candle Icon.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-title occasion-cardtitle">In Memory Of</p>
+                <p class="card-text occasion-cardtext">Rally your friends and say happy birthday</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------  humans block code ------------------------- -->
+    <section class="humans">
+      <h2 class="humans-heading ">AWESOME HUMANS USE AND LOVE <span>TRIBUTE</span></h2>
+      <h5 class="humans-subheading ">how people around the globe are using Tribute to celebrate the people they care
+        about.</h5>
+      <div class=" d-flex justify-content-center humans-videowrapper">
+        <video class="humans-video">
+          <source src="scss/vendors/human-video.mp4" type="video/mp4" />
+        </video>
+        <div class="humans-playvideo"></div>
+      </div>
+      <div class="humans-sun">
+        <img src="app/images/sun.png" alt="sun-image">
+      </div>
+      <div class="humans-rightcloud">
+        <svg class="humans-rightcloud-shape" xmlns="http://www.w3.org/2000/svg" height="138" viewBox="0 0 690 138">
+          <path id="Fill_1" data-name="Fill 1"
+            d="M137,0H0A11.784,11.784,0,0,0,11,5.477c8.657,14.316,27.7,18.917,42.12,10.319,10.643,27.793,51.76,26.647,60.662-1.8A20.234,20.234,0,0,0,137,0"
+            transform="translate(331 70)" fill="#addbbe" />
+          <path id="Fill_3" data-name="Fill 3"
+            d="M47.548,28.565a17.6,17.6,0,0,0-15.532,3.784A19.092,19.092,0,0,0,0,40H137a11.348,11.348,0,0,0-20.667-4.291,17.815,17.815,0,0,0-12.967-13.658C95.879-11.165,47.185-5.121,47.548,28.565"
+            transform="translate(331 27)" fill="#6cc9bf" />
+          <path id="Fill_122" data-name="Fill 122"
+            d="M138.3,12.349a16.938,16.938,0,0,1-16.7,11.26c3.047,31.834-48.474,32.86-46.869,1-16.927,8.415-37.96-.3-43.052-18.295A23.319,23.319,0,0,1,0,.22c50.39-.163,101.709-.4,154,0a14.675,14.675,0,0,1-15.7,12.13"
+            transform="translate(0 69)" fill="#27aae2" />
+          <path id="Fill_123" data-name="Fill 123"
+            d="M188.585,51.482a23.161,23.161,0,0,0-22.777-16.26c4.16-45.971-66.1-47.452-63.912-1.441-23.083-12.152-51.76.434-58.707,26.42A30.689,30.689,0,0,0,0,69H210a20.269,20.269,0,0,0-21.415-17.518"
+            transform="translate(69)" fill="#6cc9bf" />
+          <path id="Fill_124" data-name="Fill 124"
+            d="M0,48H181a15.532,15.532,0,0,0-14.532-7.3A40.689,40.689,0,0,0,110.821,26.94c-14.06-37.058-68.38-35.531-80.143,2.4A26.709,26.709,0,0,0,0,48"
+            transform="translate(4 21)" fill="#aaad77" />
+          <path id="Fill_125" data-name="Fill 125"
+            d="M152.787,19.726A29.83,29.83,0,0,0,179.317,13.2C196.38,31.2,226.441,24.243,234,0H0C3.2,17.661,25.718,22.127,35.3,7.4A30.608,30.608,0,0,0,57.446,30.962c12.788,57.3,95.96,46.87,95.341-11.235"
+            transform="translate(40 69)" fill="#9ae0e2" />
+          <path id="Fill_194" data-name="Fill 194"
+            d="M0,36H133a11.341,11.341,0,0,0-10.677-5.476A29.555,29.555,0,0,0,81.432,20.205C71.1-7.588,31.186-6.443,22.544,22.006A19.6,19.6,0,0,0,0,36"
+            transform="translate(546 33)" fill="#fff" />
+          <path id="Fill_195" data-name="Fill 195"
+            d="M86.84,10.292a18.077,18.077,0,0,0,15.08-3.407C111.616,16.278,128.7,12.648,133,0H0C1.82,9.214,14.62,11.544,20.063,3.862a16.629,16.629,0,0,0,12.59,12.293C39.921,46.049,87.19,40.608,86.84,10.292"
+            transform="translate(546 70)" fill="#addbbe" />
+          <path id="Fill_196" data-name="Fill 196"
+            d="M103.727,29.245A13.35,13.35,0,0,1,93.439,33.5c2.228,22.96-33.485,24.785-35.923,4.121a55.6,55.6,0,0,1-12.871,1.5,55.292,55.292,0,0,1-16.836-2.6,20.623,20.623,0,0,1-3.659.33c-9.253,0-16.984-6.189-18.887-14.463A50.686,50.686,0,0,1,0,15.8c-.029-.039,1.806-.07,5.019-.1C6.4,6.821,14.436,0,24.15,0c9.682,0,17.7,6.78,19.114,15.632,29.912,0,59.824.1,89.737.1a22.815,22.815,0,0,1-21.649,14.757,23.81,23.81,0,0,1-7.624-1.241"
+            transform="translate(546 52)" fill="#6cdaff" />
+        </svg>
+      </div>
+      <div class="humans-leftcloud">
+        <svg id="clouds"class="humans-leftcloud-shape" xmlns="http://www.w3.org/2000/svg" height="148" viewBox="0 0 493 148">
+          <!-- <g id="Group_2" data-name="Group 2" transform="translate(0 274.68)"> -->
+          <path id="Fill_117" data-name="Fill 117"
+            d="M98.176,27.708a12.629,12.629,0,0,1-9.737,4.036c2.109,21.753-31.694,23.482-34,3.9a52.571,52.571,0,0,1-12.183,1.423A52.274,52.274,0,0,1,26.321,34.6a19.507,19.507,0,0,1-3.466.312,18.132,18.132,0,0,1-17.876-13.7A48.188,48.188,0,0,1,0,14.974c-.027-.037,1.709-.067,4.752-.09C6.055,6.463,13.664,0,22.855,0c9.166,0,16.757,6.424,18.093,14.81,28.314,0,56.623.093,84.935.093a21.6,21.6,0,0,1-20.491,13.981,22.526,22.526,0,0,1-7.216-1.176"
+            transform="translate(7.662 61.309)" fill="#27aae2" />
+          <path id="Fill_118" data-name="Fill 118"
+            d="M0,33.939H133.545a11.618,11.618,0,0,0-10.719-5.163c-8.442-13.5-27-17.835-41.061-9.727-10.372-26.2-50.452-25.122-59.13,1.7C12.652,18.949,2.787,24.629,0,33.939"
+            transform="translate(0 42.698)" fill="#9ae0e2" />
+          <path id="Fill_119" data-name="Fill 119"
+            d="M87.2,10.955a17.373,17.373,0,0,0,15.139-3.628A18.742,18.742,0,0,0,133.545,0H0C1.829,9.807,14.68,12.286,20.145,4.11A17.2,17.2,0,0,0,32.786,17.195c7.3,31.82,54.765,26.028,54.411-6.24"
+            transform="translate(0 76.637)" fill="#6cc9bf" />
+          <path id="Fill_197" data-name="Fill 197"
+            d="M267.091,0H0A22.781,22.781,0,0,0,21.442,10.992,59.37,59.37,0,0,0,103.559,31.7C124.3,87.489,204.465,85.19,221.821,28.088A39.371,39.371,0,0,0,267.091,0"
+            transform="translate(102.896 76.637)" fill="#9ae0e2" />
+          <path id="Fill_198" data-name="Fill 198"
+            d="M92.7,54.727A34.749,34.749,0,0,0,62.415,61.98C42.942,41.985,8.629,49.71,0,76.637H267.091c-3.659-19.617-29.359-24.576-40.291-8.222a34.406,34.406,0,0,0-25.282-26.168C186.923-21.391,91.992-9.81,92.7,54.727"
+            transform="translate(102.896)" fill="#fff" />
+          <path id="Fill_199" data-name="Fill 199"
+            d="M0,15.327H56.921A4.86,4.86,0,0,0,52.352,13,12.686,12.686,0,0,0,34.851,8.6c-4.421-11.835-21.5-11.346-25.2.767A8.39,8.39,0,0,0,0,15.327"
+            transform="translate(440.043 61.309)" fill="#fff" />
+          <path id="Fill_200" data-name="Fill 200"
+            d="M37.167,4.383a7.768,7.768,0,0,0,6.452-1.451c4.152,4,11.463,2.453,13.3-2.932H0C.781,3.923,6.258,4.915,8.587,1.644A7.1,7.1,0,0,0,13.975,6.88c3.11,12.726,23.341,10.408,23.191-2.5"
+            transform="translate(440.043 76.637)" fill="#afdefa" />
+          <!-- </g> -->
+        </svg>
+      </div>
+      <div class="humans-plane">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="85"
+            viewBox="0 0 110 85">
+            <g id="Heart_Plane_Logo" data-name="Heart Plane Logo" transform="translate(110)">
+              <path id="Path"
+                d="M-110,0s7.325.994,21.9,4.506c.044.009.072.019.115.028a.1.1,0,0,0,.025.006c1.782.406,3.652.847,5.583,1.306.271.062.536.125.81.191,3.982.956,8.226,2.012,12.659,3.178.433.112.869.231,1.309.347,1.732.459,3.48.934,5.259,1.425.6.166,1.187.331,1.788.5,2.091.587,4.191,1.187,6.316,1.812.143.044.284.081.424.122q3.351.994,6.724,2.056c.626.194,1.246.4,1.873.6q2.538.806,5.057,1.65c.67.225,1.33.444,1.994.672,2.243.766,4.477,1.544,6.68,2.35C4.159,33.834,6.032,51.083-8.553,55.457c-14.551,4.343-22.929.656-22.929.656l.9,27.247v.062c0,.109-.072.181-.087.281-.012.031-.019.059-.031.094a1.593,1.593,0,0,1-.629.866,1.491,1.491,0,0,1-.421.256,1.515,1.515,0,0,1-.162.037,1.375,1.375,0,0,1-.576.022,1.5,1.5,0,0,1-.178-.031,1.5,1.5,0,0,1-.692-.4L-47.31,70.237c-.28.469-.561.937-.876,1.437-2.77,4.25-8.191,8.687-18.539,10.811C-89.313,87.079-99,73.112-104.2,46.427c-.4-2.059-.766-4.068-1.109-6.043-.031-.191-.069-.387-.1-.578-.321-1.89-.617-3.728-.891-5.524-.034-.228-.069-.453-.1-.678q-.4-2.69-.735-5.228c-.019-.15-.041-.3-.059-.45q-.341-2.634-.617-5.075s0,0,0-.006v0C-110.123,2.553-110,0-110,0"
+                fill="url(#linear-gradient)" />
+              <path id="Fill_4" data-name="Fill 4"
+                d="M-15,12.645-2.03,26.533a1.337,1.337,0,0,0,2.03,0c-.319.243-.753.091-1.39-1.152C-2.722,22.743-12.944,2.487-14.218,0A16.1,16.1,0,0,1-13.06,3.821s.029.3.029.849a.3.3,0,0,1,0,.212A18.17,18.17,0,0,1-15,12.645"
+                transform="translate(33 -58)" fill="url(#linear-gradient-2)" />
+              <path id="Fill_8" data-name="Fill 8"
+                d="M-110,0s7.328.989,21.9,4.487c.044.009.075.019.115.028,15.46,3.519,36.958,9.014,56.5,16.14C4.16,33.692,6.03,50.868-8.552,55.224c-14.55,4.325-22.932.653-22.932.653L-82.176,21.4l-19.5-14.624,7.665,7.374c.187.187.374.342.561.5,24.832,22.559,40.971,31.676,46.362,41.2a.031.031,0,0,1,.031.031c.187.28.312.56.467.84.031.093.093.156.125.249a15.962,15.962,0,0,1,1.246,3.921s.031.311.031.871a.263.263,0,0,1,0,.218,17.944,17.944,0,0,1-2.119,7.966c-.28.467-.561.933-.872,1.431-2.773,4.232-8.194,8.65-18.538,10.766C-89.311,86.714-99,72.8-104.2,46.232c-1.707-8.731-2.851-16.7-3.62-23.483v0C-110.123,2.542-110,0-110,0"
+                fill="url(#linear-gradient-3)" />
+            </g>
+          </svg>
+        
+      </div>
+
+      <div class="humans-ballon">
+        <svg id="baloon" xmlns="http://www.w3.org/2000/svg"class="humans-ballon-shape" height="186" viewBox="0 0 493 186">
+          <path id="Fill_126" data-name="Fill 126"
+            d="M68.5,0C30.67,0,0,31.57,0,70.513a71.342,71.342,0,0,0,20.063,49.86L48.847,150H88.156l28.781-29.627A71.342,71.342,0,0,0,137,70.513C137,31.57,106.332,0,68.5,0"
+            transform="translate(234)" fill="#6cdaff" />
+          <path id="Fill_127" data-name="Fill 127"
+            d="M69,0C30.894,0,0,31.57,0,70.513a71.073,71.073,0,0,0,20.21,49.86L49.2,150H69Z" transform="translate(233)"
+            fill="#4dcfff" />
+          <path id="Fill_128" data-name="Fill 128"
+            d="M40,0H37.276L35.613,9.946H21.362V0H18.638V9.946H4.387L2.722,0H0L6.7,40H33.3Z"
+            transform="translate(283 146)" fill="#ff972a" />
+          <path id="Fill_129" data-name="Fill 129" d="M2.858,0H0L7.03,40H21V0H19.567V9.946H4.606Z"
+            transform="translate(283 146)" fill="#ff8307" />
+          <path id="Fill_130" data-name="Fill 130"
+            d="M21,0V113H7.325A168.957,168.957,0,0,1,0,64.245C0,38.142,9.4,14.277,21,0" transform="translate(283 4)"
+            fill="#d9f1e7" />
+          <path id="Fill_131" data-name="Fill 131"
+            d="M65,0C41.068,7.138,21.664,33.451,21.664,64.245A85.686,85.686,0,0,0,36.782,113H22.675A63.8,63.8,0,0,1,0,64.245C0,28.763,29.1,0,65,0"
+            transform="translate(239 4)" fill="#d9f1e7" />
+          <path id="Fill_132" data-name="Fill 132"
+            d="M0,0V113H13.675A169.036,169.036,0,0,0,21,64.245C21,38.142,11.6,14.277,0,0" transform="translate(303 4)"
+            fill="#fff" />
+          <path id="Fill_133" data-name="Fill 133"
+            d="M0,0C23.932,7.138,43.333,33.451,43.333,64.245A85.668,85.668,0,0,1,28.216,113H42.325A63.8,63.8,0,0,0,65,64.245C65,28.763,35.9,0,0,0"
+            transform="translate(302 4)" fill="#fff" />
+        </svg>
+      </div>
+
+    </section>
+  </div>
+  <!-- ----------------------  credit block code ------------------------- -->
+  <div class="bottomlinear-bg">
+    <section class="credit">
+      <div class="container">
+        <h2 class="credit-heading">WE DO THE WORK YOU TAKE THE CREDIT</h2>
+        <h4 class="credit-subheading">Premium upgrade options to make your experience as seamless and meaningful as
+          possible. </h4>
+      </div>
+      <div class="credit-content">
+        <div class="credit-wrapper">
+          <a href="javascript:void(0)" class="card credit-card h-100">
+            <img src="app/images/Group 72.png" class="card-img-top credit-cardimg" alt="...">
+            <div class="card-body">
+              <p class="card-title credit-cardtitle">Concierge and Pro Service</p>
+              <p class="card-text credit-cardtext">Sit back, relax and let one of our concierge editors manage your
+                campaign and compile the final Tribute for you! Or, have one of our pro editors create a dynamic
+                highlight reel.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="credit-wrapper">
+          <a href="javascript:void(0)" class="card credit-card h-100">
+            <img src="app/images/video-card.gif" class="card-img-top credit-cardimg" alt="...">
+            <div class="card-body">
+              <p class="card-title credit-cardtitle">Video Card & Bamboo USB</p>
+              <p class="card-text credit-cardtext">Sit back, relax and let one of our concierge editors manage your
+                campaign and compile the final Tribute for you! Or, have one of our pro editors create a dynamic
+                highlight reel. </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------  soul block code ------------------------- -->
+    <section class="soul">
+      <div class="container">
+        <div class="soul-content">
+          <h2 class="soul-heading">KIND WORDS FROM BEAUTIFUL SOULS</h2>
+          <h4 class="soul-subheading">Testimonials from happy Tribute recipients aroung the world.</h4>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="card soul-tooltip">
+              <p class="card-text soul-text">Well, I’m crying so I guess that means it’s perfect. Thank you for all of
+                your work and quick turnaround. This has been my fourth Tribute I've either hosted or participated in,
+                and
+                I’ll keep coming back.
+              </p>
+              <a class="soul-links" href="javascript:void(0)">Divya</a>
+              <div class="soul-shape">
+                <span class="soul-triangle"></span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="card soul-tooltip">
+              <p class="card-text soul-text">I wanted to share this note I got from my mom for the tribute video I made
+                her for her birthday. "Thank you so much for this awesome video. BEST BIRTHDAY PRESENT IN MY 55 years of
+                existence. I will cherish this til my last breath on this planet.
+              </p>
+              <a class="soul-links" href="javascript:void(0)">Alana Podrix</a>
+              <div class="soul-shape">
+                <span class="soul-triangle"></span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="card soul-tooltip">
+              <p class="card-text soul-text">Hi there, so I finally watched the full Tribute with my wife (who it was
+                for)
+                and it was SO GREAT! She was so moved, and I can’t thank you enough for putting together such a nice
+                keepsake for us. THANK YOU, THANK YOU, THANK YOU!!!</p>
+              <a class="soul-links" href="javascript:void(0)">Jay Marril</a>
+              <div class="soul-shape">
+                <span class="soul-triangle"></span></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="card soul-tooltip">
+              <p class="card-text soul-text">“I’ve never received such a meaningful gift in my life, seriously. I
+                couldn’t
+                stop crying during my entire Tribute. I never knew that people felt that way about me… Absolutely
+                incredible, I am SO grateful for my friends and family and the entire Tribute team for making this all
+                possible” </p>
+              <a class="soul-links" href="javascript:void(0)">Divya</a>
+              <div class="soul-shape">
+                <span class="soul-triangle soul-angle"></span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class=" soul-tooltip">
+              <p class="card-text soul-text">You have built such an inspiring product that has brought so much joy to
+                our
+                lives. Thank you for your courage, compassion and big heart.</p>
+              <a class="soul-links" href="javascript:void(0)">Alana Podrix</a>
+              <div class="soul-shape">
+                <span class="soul-triangle soul-angle"></span></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="card soul-tooltip">
+              <p class="card-text soul-text">Wow, Sergio, it’s PERFECT!! I’m SO SO happy!! The birthday boy will be
+                blown
+                away!! It’s really the best gift ever and you’ve done an amazing job editing it! Now we need one for a
+                graduation and one for a wedding.
+              </p>
+              <a class="soul-links" href="javascript:void(0)">Jay Marril</a>
+              <div class="soul-shape">
+                <span class="soul-triangle soul-angle"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------  earth block code ------------------------- -->
+
+    <section class="earth">
+      <div class="container">
+        <div class="earth-rightcloud"><svg xmlns="http://www.w3.org/2000/svg" width="1871" height="251"
+            viewBox="0 0 1871 251">
+            <g id="clouds" transform="translate(1871)">
+              <path id="Fill_117" data-name="Fill 117"
+                d="M-164.559,46.679a21.116,21.116,0,0,0,16.322,6.8c-3.535,36.648,53.124,39.561,56.991,6.578a87.692,87.692,0,0,0,20.42,2.4A87.212,87.212,0,0,0-44.118,58.3a32.535,32.535,0,0,0,5.809.526c14.675,0,26.944-9.879,29.964-23.086A81.115,81.115,0,0,0,0,25.226c.045-.062-2.865-.112-7.966-.152C-10.15,10.888-22.9,0-38.309,0-53.673,0-66.4,10.823-68.636,24.951c-47.459,0-94.909.156-142.364.156,4.87,13.7,18.407,23.554,34.346,23.554a37.583,37.583,0,0,0,12.095-1.981"
+                transform="translate(-14 104)" fill="#27aae2" />
+              <path id="Fill_118" data-name="Fill 118"
+                d="M0,57H-225a19.6,19.6,0,0,1,18.06-8.671c14.223-22.669,45.488-29.953,69.181-16.337,17.476-44.009,85-42.192,99.623,2.85C-21.317,31.824-4.7,41.364,0,57"
+                transform="translate(0 72)" fill="#9ae0e2" />
+              <path id="Fill_119" data-name="Fill 119"
+                d="M-146.912,18.3a29.461,29.461,0,0,1-25.507-6.059C-188.823,28.937-217.731,22.483-225,0H0C-3.082,16.379-24.733,20.52-33.941,6.864a28.849,28.849,0,0,1-21.3,21.855C-67.533,81.865-147.508,72.192-146.912,18.3"
+                transform="translate(0 130)" fill="#6cc9bf" />
+              <path id="Fill_197" data-name="Fill 197"
+                d="M-450,0H0A38.451,38.451,0,0,1-36.126,18.407C-64.558,66.524-127.1,81.991-174.479,53.089c-34.95,93.417-170.007,89.568-199.249-6.054A66.355,66.355,0,0,1-450,0"
+                transform="translate(-173 130)" fill="#9ae0e2" />
+              <path id="Fill_198" data-name="Fill 198"
+                d="M-156.177,92.12a58.586,58.586,0,0,1,51.018,12.209C-72.35,70.672-14.538,83.676,0,129H-450c6.164-33.021,49.465-41.368,67.882-13.839a57.938,57.938,0,0,1,42.6-44.048c24.589-107.12,184.533-87.626,183.345,21.008"
+                transform="translate(-173)" fill="#fff" />
+              <path id="Fill_199" data-name="Fill 199"
+                d="M0,26H-96a8.184,8.184,0,0,1,7.707-3.956,21.326,21.326,0,0,1,29.516-7.45c7.457-20.075,36.269-19.247,42.5,1.3A14.146,14.146,0,0,1,0,26"
+                transform="translate(-1775 42)" fill="#fff" />
+              <path id="Fill_200" data-name="Fill 200"
+                d="M-62.683,7.435A13.044,13.044,0,0,1-73.565,4.973C-80.568,11.755-92.9,9.135-96,0H0C-1.318,6.655-10.555,8.337-14.482,2.789A12.012,12.012,0,0,1-23.57,11.67c-5.246,21.588-39.366,17.655-39.113-4.235"
+                transform="translate(-1775 68)" fill="#afdefa" />
+            </g>
+          </svg></div>
+        <div class="earth-leftcloud">
+          <svg id="clouds" xmlns="http://www.w3.org/2000/svg" width="312" height="245" viewBox="0 0 312 245">
+            <path id="Fill_118" data-name="Fill 118"
+              d="M0-46H182a15.863,15.863,0,0,1-14.609,7c-11.5,18.295-36.795,24.173-55.96,13.184C97.3,9.7,42.675,8.232,30.848-28.118,17.243-25.683,3.8-33.381,0-46"
+              transform="translate(130 98)" fill="#9ae0e2" />
+            <path id="Fill_119" data-name="Fill 119"
+              d="M118.835-14.866a23.751,23.751,0,0,1,20.632,4.923C152.737-23.511,176.12-18.267,182,0H0C2.493-13.308,20.006-16.672,27.454-5.577A23.392,23.392,0,0,1,44.682-23.334c9.945-43.181,74.635-35.322,74.153,8.468"
+              transform="translate(129 52)" fill="#6cc9bf" />
+            <path id="Fill_199" data-name="Fill 199"
+              d="M0,21H78a6.661,6.661,0,0,0-6.262-3.2,17.385,17.385,0,0,0-23.981-6.018C41.7-4.428,18.289-3.758,13.222,12.838A11.5,11.5,0,0,0,0,21"
+              transform="translate(0 203)" fill="#fff" />
+            <path id="Fill_200" data-name="Fill 200"
+              d="M50.93,6.005a10.647,10.647,0,0,0,8.842-1.988C65.462,9.494,75.48,7.378,78,0H0C1.071,5.375,8.576,6.734,11.767,2.252a9.733,9.733,0,0,0,7.384,7.174c4.262,17.437,31.985,14.26,31.78-3.421"
+              transform="translate(0 224)" fill="#afdefa" />
+          </svg>
+        </div>
+        <div class="earth-plane">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="85"
+            viewBox="0 0 110 85">
+            <defs>
+              <linearGradient id="linear-gradient" x1="0.803" y1="0.819" x2="0.131" y2="0.174"
+                gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ca2e2d" />
+                <stop offset="1" stop-color="#9b1919" />
+              </linearGradient>
+              <linearGradient id="linear-gradient-2" x1="1" y1="1.303" x2="-0.219" y2="0.045"
+                gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#a20d0c" />
+                <stop offset="1" stop-color="#800808" />
+              </linearGradient>
+              <linearGradient id="linear-gradient-3" x1="0.851" y1="-0.046" x2="0.178" y2="1"
+                gradientUnits="objectBoundingBox">
+                <stop offset="0" stop-color="#ff8180" />
+                <stop offset="1" stop-color="#fe4a49" />
+              </linearGradient>
+            </defs>
+            <g id="Heart_Plane_Logo" data-name="Heart Plane Logo" transform="translate(110)">
+              <path id="Path"
+                d="M-110,0s7.325.994,21.9,4.506c.044.009.072.019.115.028a.1.1,0,0,0,.025.006c1.782.406,3.652.847,5.583,1.306.271.062.536.125.81.191,3.982.956,8.226,2.012,12.659,3.178.433.112.869.231,1.309.347,1.732.459,3.48.934,5.259,1.425.6.166,1.187.331,1.788.5,2.091.587,4.191,1.187,6.316,1.812.143.044.284.081.424.122q3.351.994,6.724,2.056c.626.194,1.246.4,1.873.6q2.538.806,5.057,1.65c.67.225,1.33.444,1.994.672,2.243.766,4.477,1.544,6.68,2.35C4.159,33.834,6.032,51.083-8.553,55.457c-14.551,4.343-22.929.656-22.929.656l.9,27.247v.062c0,.109-.072.181-.087.281-.012.031-.019.059-.031.094a1.593,1.593,0,0,1-.629.866,1.491,1.491,0,0,1-.421.256,1.515,1.515,0,0,1-.162.037,1.375,1.375,0,0,1-.576.022,1.5,1.5,0,0,1-.178-.031,1.5,1.5,0,0,1-.692-.4L-47.31,70.237c-.28.469-.561.937-.876,1.437-2.77,4.25-8.191,8.687-18.539,10.811C-89.313,87.079-99,73.112-104.2,46.427c-.4-2.059-.766-4.068-1.109-6.043-.031-.191-.069-.387-.1-.578-.321-1.89-.617-3.728-.891-5.524-.034-.228-.069-.453-.1-.678q-.4-2.69-.735-5.228c-.019-.15-.041-.3-.059-.45q-.341-2.634-.617-5.075s0,0,0-.006v0C-110.123,2.553-110,0-110,0"
+                fill="url(#linear-gradient)" />
+              <path id="Fill_4" data-name="Fill 4"
+                d="M-15,12.645-2.03,26.533a1.337,1.337,0,0,0,2.03,0c-.319.243-.753.091-1.39-1.152C-2.722,22.743-12.944,2.487-14.218,0A16.1,16.1,0,0,1-13.06,3.821s.029.3.029.849a.3.3,0,0,1,0,.212A18.17,18.17,0,0,1-15,12.645"
+                transform="translate(-33 58)" fill="url(#linear-gradient-2)" />
+              <path id="Fill_8" data-name="Fill 8"
+                d="M-110,0s7.328.989,21.9,4.487c.044.009.075.019.115.028,15.46,3.519,36.958,9.014,56.5,16.14C4.16,33.692,6.03,50.868-8.552,55.224c-14.55,4.325-22.932.653-22.932.653L-82.176,21.4l-19.5-14.624,7.665,7.374c.187.187.374.342.561.5,24.832,22.559,40.971,31.676,46.362,41.2a.031.031,0,0,1,.031.031c.187.28.312.56.467.84.031.093.093.156.125.249a15.962,15.962,0,0,1,1.246,3.921s.031.311.031.871a.263.263,0,0,1,0,.218,17.944,17.944,0,0,1-2.119,7.966c-.28.467-.561.933-.872,1.431-2.773,4.232-8.194,8.65-18.538,10.766C-89.311,86.714-99,72.8-104.2,46.232c-1.707-8.731-2.851-16.7-3.62-23.483v0C-110.123,2.542-110,0-110,0"
+                fill="url(#linear-gradient-3)" />
+            </g>
+          </svg>
+        </div>
+        <div class="earth-desc">
+          <h2>READY TO GIVE THE MOST MEANINGFUL GIFT ON EARTH?</h2>
+          <button class="btn btn--tribute">START A TRIBUTE</button>
+        </div>
+        <div class="earth-bottom">
+          <img src="app/images/earth-bottom.png" alt="bgimage">
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- ----------------------  footer block code ------------------------- -->
+  <footer class="footer">
+    <div class="fluid-contaner">
+      <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <ul class="footer-list">
+            <li><a href="javascript:void(0)" class="footer-links"> ABOUT</a> </li>
+            <li><a href="javascript:void(0)" class="footer-links">PRICING</a></li>
+            <li><a href="javascript:void(0)" class="footer-links">FAQ</a></li>
+            <li><a href="javascript:void(0)" class="footer-links">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-sm-9 footer-signup">
+          <h2 class="footer-heading">SIGN UP FOR OUR NEWSLETTER</h2>
+          <form class="form">
+            <input type="text" class="form-control form-email" placeholder="Enter Email" />
+            <button class=" btn-submit" type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3 col-sm-4">
+          <li class="footer-logo"><a class="navbar-brand" href="javascript:void(0)">
+              <img src="app/images/Logo.png" class="footer-logoimg" alt="brand logo" /></li>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-4 footer-order">
+          <p class="footer-copyright">Terms of Service & Privacy Policy © Tribute 2020. Made with love in Brooklyn, NY.
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-4">
+          <ul class="footer-icons">
+            <li><a href="javascript:void(0)"title="Instagram"><span class="icon-Instagram"></span></a></li>
+            <li><a href="javascript:void(0)"title="Facebook"><span class="icon-Facebook"></span></a></li>
+            <li><a href="javascript:void(0)"title="Twitter"><span class="icon-Twitter"></span></a></li>
+            <li><a href="javascript:void(0)"title="Youtube"><span class="icon-Youtube"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
+  <script src="app/js/main.js"></script>
+</body>
+
+</html>

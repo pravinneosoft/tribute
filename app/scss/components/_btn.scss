@@ -1,0 +1,75 @@
+.btn {
+  background-image: linear-gradient($color-red, $color-light-red);
+  color: $color-white;
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &--tribute {
+    width: 233px;
+    height: 54px;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: 0;
+  }
+
+  &--secondary {
+    width: 233px;
+    height: 62px;
+    font-weight: 800;
+    border-radius: 3px;
+    outline: 0;
+    color: $color-grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-image: linear-gradient($color-cyan, $color-cyan);
+      color: $color-white;
+    }
+  }
+
+  &--howwork {
+    color: $color-darkblue;
+    width: 233px;
+    height: 62px;
+    font-weight: 800;
+    border-radius: 3px;
+    background-color: transparent;
+    background-image: none;
+    font-size: 14px;
+    border: 2px solid $color-darkblue;
+    border-radius: 3px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-image: linear-gradient($color-red, $color-light-red);
+      color: $color-white;
+      border: 0;
+    }
+  }
+
+  &-submit {
+    background-color: $color-cyan;
+    font-size: 14px;
+    font-family: $primary-font;
+    padding: 7px;
+    font-weight: 800;
+    color: $color-white;
+    border-radius: 3px;
+    width: 106px;
+    border: transparent;
+
+    @include media-breakpoint-only(xs) {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+    }
+  }
+}
