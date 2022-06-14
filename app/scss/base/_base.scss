@@ -5,7 +5,7 @@
 }
 
 body {
-    width: 100%;
+    @include full-width;
     font-weight: 400;
     font-family: $primary-font;
 }
@@ -17,16 +17,16 @@ a ,li{
 
 }
 h1{
-    color: black;
+    color: $color-black;
     font-size: 111px;
 }
 .row{
-    width: 100%;
+    @include full-width;
     margin: 0;
 }
 a:hover{
     color: $color-green;
 }
 img{
-    width: 100%;
+    @include full-width;
 }

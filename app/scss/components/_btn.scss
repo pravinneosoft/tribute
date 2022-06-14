@@ -16,13 +16,11 @@
   }
 
   &--secondary {
-    width: 233px;
+    @extend .btn--tribute;
     height: 62px;
     font-weight: 800;
-    border-radius: 3px;
-    outline: 0;
     color: $color-grey;
-    font-size: 14px;
+   @include fontsize;
     margin-bottom: 20px;
 
     &:hover {
@@ -33,17 +31,11 @@
 
   &--howwork {
     color: $color-darkblue;
-    width: 233px;
-    height: 62px;
-    font-weight: 800;
-    border-radius: 3px;
+    @extend .btn--secondary;
     background-color: transparent;
     background-image: none;
-    font-size: 14px;
     border: 2px solid $color-darkblue;
-    border-radius: 3px;
     position: relative;
-    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,19 +49,21 @@
 
   &-submit {
     background-color: $color-cyan;
-    font-size: 14px;
+   @include fontsize;
     font-family: $primary-font;
     padding: 7px;
     font-weight: 800;
     color: $color-white;
     border-radius: 3px;
-    width: 106px;
     border: transparent;
+    @include full-width;
+    padding: 8px;
+    margin-top: 8px;
 
-    @include media-breakpoint-only(xs) {
-      width: 100%;
-      padding: 8px;
-      margin-top: 8px;
+    @include media-breakpoint-up(sm) {
+      width: 106px;
+      padding: 0;
+      margin-top: 0;
     }
   }
 }

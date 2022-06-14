@@ -1,13 +1,12 @@
 .toplinear-bg {
-    background-image: linear-gradient(#ecfeff, #ecfaff);
+    background-image: linear-gradient($color-light-green, $color-wheat);
 }
 
 .bottomlinear-bg {
-    background-image: linear-gradient(#8fd6c6, #e0fff8);
+    background-image: linear-gradient($color-darkgreen, $color-lightwheat);
 }
 .scroll{
-   
     position: fixed;
-    width: 100%;
+    @include full-width;
     z-index: 1;
 }

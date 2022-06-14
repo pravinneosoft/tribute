@@ -1,36 +1,34 @@
 .nav-link {
   color: $color-white !important;
-  font-size: 14px;
+  @include fontsize;
   font-weight: 700;
   padding: 0 !important;
 
   @include media-breakpoint-up(sm) {
-    font-size: 14px;
+    @include fontsize;
     font-weight: 800;
   }
 
   @include media-breakpoint-up(md) {
-    font-size: 14px;
-    font-weight: 800;
+    @include fontsize;
+    font-weight: 700;
+  }
+
+  &:hover {
+    text-shadow: 1px 1px 0 lighten($color-green, 15%), 2px 2px 0 lighten($color-green, 10%), 3px 3px 0 lighten($color-green, 5%);
+    transform: translate(-2px, -2px);
+    color: $color-green;
   }
 }
 
 .navbar-nav {
-  @include media-breakpoint-only(xs) {
-    display: none;
-  }
+  flex-direction: row;
 
   @include media-breakpoint-up(sm) {
     justify-content: center;
-    flex-direction: row;
     font-size: 44px;
   }
-
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
-  }
 }
-
 
 .card {
   width: 212px;
@@ -49,7 +47,6 @@
 
   &-title {
     margin-bottom: 25px;
-
     font-size: 24px;
     font-weight: 800;
   }
@@ -57,7 +54,7 @@
   &-text {
     font-family: $secondary-font;
     font-weight: 400;
-    font-size: 14px;
+    @include fontsize;
   }
 }
 
@@ -71,10 +68,4 @@
 .col-sm-6 {
   display: flex;
   justify-content: center;
-}
-
-.item {
-  @include media-breakpoint-only(xs) {
-    text-align: center;
-  }
 }
