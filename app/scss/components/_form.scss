@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    @include fontsize;
+    font-family: $secondary-font;
+    font-weight: 500;
+    color: $color-light-grey;
+    padding: 10px 0 10px 0;
+    border-radius: 3px;
+    border: 0;
+
+    &-email {
+        @include fontsize;
+        @include media-breakpoint-up(sm) {
+            width: 67%;
+        }
+
+        @include media-breakpoint-up(md) {
+            width: 31.7%;
+        }
+    }
+}

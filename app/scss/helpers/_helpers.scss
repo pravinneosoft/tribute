@@ -1,0 +1,30 @@
+.toplinear-bg {
+    background-image: linear-gradient($color-light-green, $color-wheat);
+}
+
+.bottomlinear-bg {
+    background-image: linear-gradient($color-darkgreen, $color-lightwheat);
+}
+.scroll{
+    position: fixed;
+    @include full-width;
+    z-index: 1;
+}
+.overlay-container{
+      background-color: $color-red;
+    position: absolute;
+    top: 0;
+    /* background-color: red; */
+    opacity: 0.6;
+    height: 100%;
+    /* z-index: auto; */
+    width: 100%;
+    clip-path: ellipse(135% 100% at 50% -10%);
+    min-height: 400px;
+    overflow: hidden;
+   
+
+    @include media-breakpoint-up(md) {
+      clip-path: ellipse(100% 100% at 50% -10%);
+    }
+}

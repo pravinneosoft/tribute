@@ -1,0 +1,118 @@
+.footer {
+  background-color: $color-blue;
+  padding: 80px 30px 15px 30px;
+
+  &-logo {
+      @include center;
+      margin-bottom: 35px;
+      @include media-breakpoint-up(sm) {
+text-align: initial;
+margin-bottom: 5px;
+      }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+
+    @include media-breakpoint-up(sm) {
+      line-height: 40px;
+      margin-bottom: 0;
+      display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+      line-height: 40px;
+      margin-bottom: 0;
+      display: block;
+    }
+  }
+
+  &-links {
+    font-weight: 800;
+    font-family: $secondary-font;
+    @include fontsize;
+    color: $color-white;
+  }
+
+  &-signup {
+    align-self: flex-end;
+  }
+
+  &-heading {
+    font-weight: 800;
+    font-size: 23px;
+    color: $color-green;
+    margin-bottom: 27px;
+    margin-top: 36px;
+   @include center;
+
+    @include media-breakpoint-up(md) {
+      text-align: start;
+    }
+  }
+
+  &-copyright {
+
+    font-family: $secondary-font;
+    font-weight: 500;
+    color: $color-white;
+    font-size: 11px;
+    margin: 0;
+   @include center;
+
+    @include media-breakpoint-up(md) {
+      @include center;
+    }
+  }
+
+  &-icons {
+    margin: 0 -8px;
+    padding: 0;
+
+    li {
+      padding: 0 8px;
+    }
+
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+
+    @include media-breakpoint-up(sm) {
+      text-align: end;
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 18px;
+      color: $color-white;
+    }
+
+    @include media-breakpoint-up(md) {
+      text-align: end;
+      display: flex;
+      justify-content: flex-end;
+      column-gap: 18px;
+      color: $color-white;
+    }
+  }
+
+  &-icons li a span {
+    color: $color-white;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  &-order {
+    order: 2;
+    @include media-breakpoint-up(sm) {
+      order: initial;
+    }
+  }
+  &-logoimg {
+    width: 143px;
+  }
+}

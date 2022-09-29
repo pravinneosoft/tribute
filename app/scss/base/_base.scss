@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include full-width;
+    font-weight: 400;
+    font-family: $primary-font;
+}
+
+a ,li{
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+
+}
+h1{
+    color: $color-black;
+    font-size: 111px;
+}
+.row{
+    @include full-width;
+    margin: 0;
+}
+a:hover{
+    color: $color-green;
+}
+img{
+    @include full-width;
+}

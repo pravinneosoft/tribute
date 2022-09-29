@@ -1,0 +1,968 @@
+.herobanner {
+ position: relative;
+  
+  &-video {
+    min-height: 100vh;
+  }
+
+  &-bgvideo {
+    height: auto;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    width: 219%;
+    object-fit: cover;
+    object-position: center;
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+    }
+
+  }
+
+  &-videowrapper {
+    clip-path: ellipse(135% 100% at 50% -10%);
+    min-height: 400px;
+    overflow: hidden;
+   
+
+    @include media-breakpoint-up(md) {
+      clip-path: ellipse(100% 100% at 50% -10%);
+    }
+  }
+
+  &-content {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @include center;
+    max-width: 674px;
+    margin: 0 auto;
+    right: 0;
+    padding: 100px 15px;
+    color: $color-white;
+z-index: 1;
+    @include media-breakpoint-up(md) {
+      top: 67%;
+    }
+  }
+
+  &-heading {
+    @include fontsize-medium;
+    font-weight: 400;
+    @include center;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(md) {
+      @include fontsize-larger;
+      margin-bottom: 42px;
+    }
+  }
+
+  &-subheading {
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 400;
+    @include center;
+    margin-bottom: 40px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 20px;
+      margin-bottom: 52px;
+    }
+  }
+}
+
+//   -----------------herobanner css end --------------
+.slider {
+  &-heading {
+    font-weight: 400;
+    font-size: 45px;
+    color: $color-green;
+    @include center;
+    margin-bottom: 65px;
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 54px;
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 100px;
+      display: block;
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 31px;
+    color: $color-green;
+    @include center;
+    margin-bottom: 65px;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 45px;
+    }
+  }
+
+  &-content {
+    display: none;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
+
+      &:first-child {
+        display: block;
+      }
+
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient($color-light-green, $color-white);
+  }
+}
+
+//   -----------------slider css end --------------
+.works {
+  @include center;
+  display: flex;
+  justify-content: center;
+  background-color: $color-white;
+
+  &-heading {
+    color: $color-tomato;
+    @include fontsize-medium;
+    font-weight: 600;
+    padding: 0 20px;
+
+    @include media-breakpoint-up(md) {
+      @include fontsize-larger;
+      margin-bottom: 70px;
+      padding: 0;
+    }
+  }
+
+  &-subheading {
+    color: $color-dark;
+    font-size: 18px;
+    font-family: $secondary-font;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding: 0 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0;
+      margin-bottom: 70px;
+    }
+  }
+
+  &-howstart {
+    @include media-breakpoint-up(sm) {
+      justify-content: end;
+    }
+  }
+
+  &-start {
+    @include media-breakpoint-up(sm) {
+      justify-content: start;
+    }
+  }
+
+  &-card {
+    padding-top: 25px;
+    margin-bottom: 25px;
+@include media-breakpoint-up(md){
+  margin-bottom: 0;
+}
+    &:hover {
+      box-shadow: 0px 0px 3px 1px $color-cyan;
+      border-radius: 25px;
+      transition: 0.4s all ease-in-out;
+ 
+    }
+  }
+
+  &-cardimg {
+    width: 159px;
+    height: 172px;
+  }
+}
+
+//   -----------------works css end --------------
+.occasion {
+  background-color: $color-light-green;
+  padding-bottom: 70px;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 170px;
+  }
+
+  &-top {
+    width: 100%;
+    height: 120px;
+    background-image: linear-gradient($color-white, $color-light-green);
+  }
+
+  &-heading {
+    @include fontsize-medium;
+
+    font-weight: 800;
+    @include center;
+    color: $color-lightblack;
+    line-height: 57px;
+    padding: 0 20px;
+
+    @include media-breakpoint-up(md) {
+      @include fontsize-larger;
+      padding: 70px 0;
+    }
+  }
+
+  &-cardtext {
+    font-family: $secondary-font;
+    font-weight: 400;
+    display: none;
+    margin: 16px 30px;
+  }
+
+  &-card {
+    background-color: transparent;
+    @include center;
+    padding-top: 20px;
+    width: 260px;
+    position: relative;
+    height: 302px;
+
+    &:hover {
+      border-radius: 30px;
+      background-color: $color-white;
+      color: $color-lightblack;
+      transition: 0.5s all ease-in-out;
+      @include center;
+      border-bottom: 13px solid $color-green;
+      display: block;
+
+      .occasion-cardtext {
+        display: block;
+      }
+    }
+
+    & img {
+      height: 116px;
+    }
+  }
+
+  &-cardtitle {
+    font-weight: 800;
+    font-size: 22px;
+    margin: 0 40px;
+    color: $color-green;
+  }
+}
+
+//   -----------------occasion css end --------------
+.credit {
+  padding-top: 200px;
+  padding-bottom: 126px;
+  position: relative;
+@include media-breakpoint-up(md){
+  padding-top: 478px;
+}
+  &-heading {
+    @include fontsize-medium;
+    font-weight: 800;
+    color: $color-white;
+    @include center;
+    margin-bottom: 26px;
+    padding: 0 20px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 50px;
+      @include fontsize-larger;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 0 265px;
+    }
+  }
+
+  &-subheading {
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-lightblack;
+    @include center;
+    margin-bottom: 90px;
+
+    @include media-breakpoint-up(md) {
+      padding: 0 230px;
+    }
+  }
+
+  &-content {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      column-gap: 50px;
+    }
+  }
+
+  &-card {
+    cursor: initial;
+    @include full-width;
+    @include center;
+    padding: 8px;
+    border-radius: 0;
+    border-bottom: 24px solid $color-blue;
+
+    @include media-breakpoint-up(md) {
+      width: 558px;
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      border-radius: 30px;
+    }
+
+    &:hover {
+      color: in;
+    }
+  }
+
+  &-cardimg {
+    width: 299px;
+    height: 235px;
+
+    @include media-breakpoint-only(xs) {
+      width: 179px;
+    }
+  }
+
+  &-cardtitle {
+    font-size: 22px;
+    color: $color-black;
+  }
+
+  &-cardtext {
+    @include fontsize;
+    font-family: $secondary-font;
+    color: $color-lightblack;
+  }
+
+  &-wrapper {
+    margin-bottom: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 48px;
+      width: 62%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 36%;
+    }
+  }
+}
+
+//   -----------------credit css end --------------
+.humans {
+  background-color: $color-light-green;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    @include contents;
+    @include full-width;
+    top: 100%;
+    height: 263px;
+    background-size: contain;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: bottom;
+    object-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(236, 254, 255);
+    background-image: url(../images/human-animation.png);
+    -webkit-clip-path: ellipse(49% 98% at 51% -3%);
+    clip-path: ellipse(50% 52% at 50% -3%);
+
+    @include media-breakpoint-up(md) {
+      height: 518px;
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 676px;
+      width: 75%;
+    }
+  }
+
+  &-heading {
+    @include fontsize-medium;
+    font-weight: 800;
+    @include center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0 20px;
+    z-index: 30;
+    @include media-breakpoint-up(sm) {
+      width: 56%;
+    }
+    @include media-breakpoint-up(md) {
+      width: 80%;
+      @include fontsize-larger;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-heading span {
+    color: $color-tomato;
+  }
+  &-subheading {
+    width: 53%;
+    font-size: 18px;
+    font-family: $secondary-font;
+    font-weight: 500;
+    @include center;
+    margin-bottom: 50px;
+    z-index: 30;
+  }
+
+  &-videowrapper {
+    display: table;
+    width: auto;
+    position: relative;
+    z-index: 50;
+  }
+
+  &-video {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 700px;
+    }
+  }
+
+  &-playvideo {
+    background-image: url("../images/playbtn.png");
+    background-repeat: no-repeat;
+    width: 11%;
+    height: 21%;;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 400ms;
+  }
+
+  &-playvideo[hidden] {
+    opacity: 0;
+    display: block;
+  }
+
+  &-rightcloud {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      z-index: 6;
+      position: absolute;
+      right: 0;
+      top: 200px;
+      animation: human-rightcloud 10s linear 0.5s 1;
+      animation-direction: normal;
+    }
+
+    @keyframes human-rightcloud {
+      0% {
+        transform: translate(-138%);
+      }
+
+      25% {
+        transform: translate(-100%);
+      }
+
+      50% {
+        transform: translate(-75%);
+      }
+
+      75% {
+        transform: translate(-50%);
+      }
+
+      100% {
+        transform: translate(0%);
+      }
+    }
+
+    &-shape {
+      width: 324px;
+    }
+  }
+
+  &-leftcloud {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      z-index: 6;
+      animation: human-leftcloud 10s linear 0.5s 1;
+      position: absolute;
+      left: 0;
+      top: 200px;
+    }
+
+    @keyframes human-leftcloud {
+      0% {
+        transform: translate(-331%);
+      }
+
+      25% {
+        transform: translate(-200%);
+      }
+
+      50% {
+        transform: translate(-100%);
+      }
+
+      75% {
+        transform: translate(-10%);
+      }
+
+      100% {
+        transform: translate(-4%);
+      }
+    }
+
+    &-shape {
+      width: 321px;
+    }
+  }
+
+  &-plane {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      position: absolute;
+      bottom: 0%;
+      left: 170px;
+      animation: human-plane 10s linear 0.5s 1;
+      transform: rotateY(133deg);
+      z-index: 1;
+
+      @keyframes human-plane {
+        0% {
+          bottom: -27%;
+          left: 207px;
+        }
+
+        25% {
+          bottom: -20%;
+          left: 200px;
+        }
+
+        50% {
+          bottom: -16%;
+          left: 190px;
+        }
+
+        75% {
+          bottom: -8%;
+          left: 180px;
+        }
+
+        100% {
+          bottom: 0%;
+          left: 170px;
+        }
+      }
+    }
+
+  }
+
+  &-sun {
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      position: absolute;
+      top: -120px;
+      ;
+      right: 0;
+    }
+  }
+
+  &-ballon {
+
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+      display: block;
+      position: absolute;
+      top: 35%;
+      right: 34px;
+      animation: human-ballon 10s linear 0.5s 1;
+
+      @keyframes human-ballon {
+        0% {
+          top: 75%;
+          right: 100px;
+        }
+
+        25% {
+          top: 60%;
+          right: 60px;
+        }
+
+        50% {
+          top: 45%;
+          right: 50px;
+        }
+
+        75% {
+          top: 40%;
+          right: 40px;
+        }
+
+        100% {
+          top: 35%;
+          right: 34px;
+        }
+      }
+    }
+
+    &-shape {
+      width: 350px;
+    }
+  }
+}
+
+//   -----------------human css end --------------
+.soul {
+  @include center;
+
+  &-heading {
+    color: $color-blue;
+    @include fontsize-medium;
+    font-weight: 800;
+    @include full-width;
+
+    @include media-breakpoint-up(md) {
+      width: 77%;
+      @include fontsize-larger;
+    }
+  }
+
+  &-subheading {
+    color: $color-white;
+    font-family: $secondary-font;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  &-tooltip {
+    position: relative;
+    width: 329px;
+    display: inline-block;
+    border: 5px solid $color-blue;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 0px 0px $color-white;
+    padding: 35px 35px 20px 35px;
+    height: fit-content;
+    margin-bottom: 33px;
+  }
+
+  &-text {
+    font-size: 15px;
+    font-family: $secondary-font;
+    font-weight: 500;
+    color: $color-lightblack;
+  }
+
+  &-links {
+    font-size: 22px;
+    font-weight: 800;
+    color: $color-light;
+  }
+
+  &-shape {
+    position: absolute;
+    right: 50%;
+    transform: rotate(215deg);
+    bottom: -50px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  &-triangle {
+    border-left: 15px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 59px solid $color-blue;
+    display: flex;
+    position: relative;
+    width: 14px;
+
+    &::before {
+      @include contents;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 45px solid rgba(202, 244, 234, 1);
+      top: 16px;
+      left: -9px;
+      transform: rotate(3deg);
+    }
+
+    &::after {
+      @include contents;
+      width: 16px;
+      height: 62px;
+      top: 24px;
+      transform: rotate(55deg);
+      left: 3px;
+      background-color: $color-whitesmoke;
+    }
+  }
+
+  &-angle {
+    &::before {
+      border-bottom: 45px solid rgba(202, 244, 234, 1);
+    }
+  }
+}
+
+//   -----------------soul css end --------------
+.earth {
+  background-image: url(../images/earth-bg.png);
+  background-repeat: no-repeat;
+  background-size: 184% 131%;
+  height: auto;
+  background-position-y: 0;
+  background-position-x: -221px;
+  @include center;
+  padding-top: 0;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    background-size: 200% 145%;
+    background-position-y: -132px;
+    background-position-x: -197px;
+    padding-top: 190px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-size: 108% 147%;
+    background-position-y: -111px;
+    background-position-x: -101px;
+    padding-top: 190px;
+  }
+
+  &-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+   
+  }
+
+  .container h2 {
+    font-family: $primary-font;
+    color: $color-lightblack;
+    font-weight: 400;
+    font-size: 24px;
+    @include center;
+    width: 72%;
+    margin-bottom: 45px;
+    z-index: 22;
+
+    @include media-breakpoint-up(md) {
+      @include fontsize-larger;
+    }
+  }
+
+  &-rightcloud {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      z-index: 6;
+      position: absolute;
+      right: 184px;
+      top: -32px;
+      animation: earth-rightcloud 10s linear 0.5s 1;
+      animation-direction: normal;
+    }
+
+    @keyframes earth-rightcloud {
+      0% {
+        transform: translate(-138%);
+      }
+
+      25% {
+        transform: translate(-100%);
+      }
+
+      50% {
+        transform: translate(-75%);
+      }
+
+      75% {
+        transform: translate(-50%);
+      }
+
+      100% {
+        transform: translate(0%);
+      }
+    }
+  }
+
+  &-leftcloud {
+    display: none;
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+      z-index: 6;
+      animation: earth-leftcloud 10s linear 0.5s 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    @keyframes earth-leftcloud {
+      0% {
+        transform: translate(-331%);
+      }
+
+      25% {
+        transform: translate(-200%);
+      }
+
+      50% {
+        transform: translate(-100%);
+      }
+
+      75% {
+        transform: translate(-10%);
+      }
+
+      100% {
+        transform: translate(-4%);
+      }
+    }
+  }
+
+  &-plane {
+    display: none;
+
+    @include media-breakpoint-up(md) {
+      display: block;
+      position: absolute;
+      z-index: 6;
+      animation: earth-plane 10s linear 0.5s 1;
+      right: 0px;
+      bottom: 592px;
+
+      @keyframes earth-plane {
+        0% {
+          right: 0px;
+          bottom: 70px;
+        }
+
+        25% {
+          right: 0px;
+          bottom: 150px;
+        }
+
+        50% {
+          right: 0px;
+          bottom: 290px;
+        }
+
+        75% {
+          right: 0px;
+          bottom: 400px;
+        }
+
+        100% {
+          right: 0px;
+          bottom: 592px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      right: 227px;
+      bottom: 450px;
+
+      @keyframes earth-plane {
+        0% {
+          right: 0px;
+          bottom: 0px;
+        }
+
+        25% {
+          right: 40px;
+          bottom: 50px;
+        }
+
+        50% {
+          right: 160px;
+          bottom: 170px;
+        }
+
+        75% {
+          right: 200px;
+          bottom: 300px;
+        }
+
+        100% {
+          right: 227px;
+          bottom: 450px;
+        }
+      }
+    }
+  }
+}
+
+//   -----------------earth css end --------------

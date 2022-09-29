@@ -1,0 +1,105 @@
+.owl {
+  &-item {
+    padding: 27px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+
+    &:after {
+      content: '';
+      margin-bottom: 20px;
+      width: 0;
+      height: 3px;
+      background: black;
+      transition: all 0.5s ease;
+    }
+
+    &:hover::after {
+      @include full-width;
+      background: $color-green;
+      display: block;
+    }
+  }
+
+  &-carousel &-item img {
+    width: unset;
+    display: unset;
+  }
+
+  &-dots {
+    display: none;
+  }
+
+  .item &-prev {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  &-next {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 24px;
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  &-nav {
+    display: flex;
+    margin-top: -115px !important;
+
+    @include media-breakpoint-up(sm) {
+      display: block;
+      margin-top: 5px;
+    }
+
+  }
+
+  &-carousel {
+    @include media-breakpoint-up(sm) {
+      height: 80px;
+    }
+
+  }
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot span {
+
+  font-size: 55px;
+  background-color: transparent;
+  background-size: contain;
+
+  &:active,&:hover {
+    background-color: transparent;
+    color: $color-green;
+  }
+
+
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+
+.item {
+  margin-bottom: 16px;
+
+  a {
+    display: inline-block;
+  }
+
+  a img {
+    margin-bottom: 0px;
+  }
+}
+.owl-carousel.owl-drag .owl-item {
+height: 95px;
+}

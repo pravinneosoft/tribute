@@ -1,0 +1,79 @@
+.btn {
+  background-image: linear-gradient($color-red, $color-light-red);
+  color: $color-white;
+
+  &:focus {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  &--tribute {
+    z-index: 1;
+    width: 233px;
+    height: 54px;
+    font-weight: 400;
+    border-radius: 3px;
+    outline: 0;
+    &:hover,&:focus{
+      background-image: linear-gradient(#76D3B7, #76D3B7);
+      color: #fff;
+    }
+  }
+
+  &--secondary {
+    @extend .btn--tribute;
+    height: 62px;
+    font-weight: 800;
+   @include fontsize;
+    margin-bottom: 20px;
+
+    &:hover {
+      background-image: linear-gradient($color-cyan, $color-cyan);
+      color: $color-white;
+    }
+  }
+
+  &--howwork {
+    color: $color-darkblue;
+    @extend .btn--secondary;
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid $color-darkblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-image: linear-gradient($color-red, $color-light-red);
+      color: $color-white;
+      border: 2px solid transparent;
+    }
+  }
+
+  &-submit {
+    background-color: $color-cyan;
+   @include fontsize;
+    font-family: $primary-font;
+    padding: 7px;
+    font-weight: 800;
+    color: $color-white;
+    border-radius: 3px;
+    border: transparent;
+    @include full-width;
+    padding: 8px;
+    margin-top: 8px;
+
+    @include media-breakpoint-up(sm) {
+      width: 106px;
+      padding: 0;
+      margin-top: 0;
+    }
+    &:hover{
+      
+        background-image: linear-gradient($color-red, $color-light-red);
+        color: $color-white;
+      
+    }
+  }
+}

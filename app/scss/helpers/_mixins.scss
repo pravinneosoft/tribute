@@ -1,0 +1,19 @@
+@mixin fontsize{
+    font-size: 14px;
+}
+@mixin fontsize-medium{
+    font-size:33px;
+}
+
+@mixin fontsize-larger{
+    font-size:55px;
+}
+@mixin center {
+    text-align: center;
+}@mixin full-width {
+  width: 100%;
+}
+@mixin contents {
+    content: "";
+    position: absolute;
+  }
