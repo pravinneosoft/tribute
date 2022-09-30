@@ -48,13 +48,7 @@
   }
 
   &-nav {
-    display: flex;
-    margin-top: -115px !important;
-
-    @include media-breakpoint-up(sm) {
-      display: block;
-      margin-top: 5px;
-    }
+ display: none;
 
   }
 

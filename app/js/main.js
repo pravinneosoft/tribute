@@ -33,7 +33,7 @@ $(document).ready(function(){
 	  }
   })
 })
-var divs = ["Section1", "Section2", "Section3", "Section4","Section5","Section66"];
+var divs = ["Section1", "Section2", "Section3", "Section4","Section5","Section6"];
 var visibleId = null;
 function show(id) {
   if(visibleId !== id) {
@@ -61,6 +61,9 @@ $('.owl-carousel').owlCarousel({
   margin: 10,
   nav: true,
   responsiveClass: true,
+  autoplay:true,
+  autoplayTimeout:1000,
+    autoplayHoverPause:true,
   responsive: {
     0: {
       items: 1,
