@@ -70,3 +70,7 @@
   display: flex;
   justify-content: center;
 }
+.form-control:focus,.form-control:focus-visible {
+box-shadow: none;
+outline: none;
+}
