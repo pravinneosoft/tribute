@@ -14,7 +14,6 @@ a ,li{
     text-decoration: none;
     list-style-type: none;
     list-style: none;
-
 }
 h1{
     color: $color-black;
@@ -25,8 +24,13 @@ h1{
     margin: 0;
 }
 a:hover{
-    color: $color-green;
+    text-decoration: auto;
+    color: unset;
 }
 img{
     @include full-width;
+}
+video{
+    width: 100%;
+    height: auto;
 }

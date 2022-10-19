@@ -1,22 +1,18 @@
 .nav-link {
   color: $color-white !important;
-  @include fontsize;
+  font-size: 20px;
   font-weight: 700;
   padding: 0 !important;
 
   @include media-breakpoint-up(sm) {
-    @include fontsize;
-    font-weight: 800;
   }
 
   @include media-breakpoint-up(md) {
-    @include fontsize;
-    font-weight: 700;
+    font-size: 18px;
   }
 
   &:hover {
     text-shadow: 0px 0px 0 #a5ded2, 0px 0px 0 #92d8c9, 0px 1px 0 #80d1bf;
-    transform: translate(-1px, 0px);
     color: #6DCAB6;
 
   }
@@ -32,14 +28,15 @@
 }
 
 .card {
-  width: 212px;
   border: transparent;
   display: block;
   color: $color-darkblue;
 
+border-radius: 8px;
   &-img-top {
     width: unset;
   }
+
 
 
   &-body {
@@ -62,13 +59,6 @@
 .bi-play-circle {
   position: absolute;
   left: 15px;
-}
-
-.col-md-4,
-.col-md-6,
-.col-sm-6 {
-  display: flex;
-  justify-content: center;
 }
 .form-control:focus,.form-control:focus-visible {
 box-shadow: none;

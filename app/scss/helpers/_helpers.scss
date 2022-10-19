@@ -10,28 +10,27 @@
     @include full-width;
     z-index: 1;
 }
+.modal-closebtn{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 .overlay-container{
       background-color: #212529;
       position: absolute;
       top: 0;
-      /* background-color: red; */
       opacity: 0.6;
       height: 100%;
-      /* z-index: auto; */
       width: 100%;
       -webkit-clip-path: ellipse(135% 100% at 50% -10%);
       clip-path: ellipse(135% 100% at 50% -10%);
       min-height: auto;
       overflow: hidden;
-      height: auto;
       transform: translateX(-50%);
       margin-left: 50%;
-      /* width: 219%; */
       -o-object-fit: cover;
       object-fit: cover;
       -o-object-position: center;
       object-position: center;
-   
 
     @include media-breakpoint-up(md) {
       clip-path: ellipse(100% 100% at 50% -10%);

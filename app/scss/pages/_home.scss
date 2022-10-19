@@ -1,6 +1,6 @@
 .herobanner {
- position: relative;
-  
+  position: relative;
+
   &-video {
     min-height: 60vh;
   }
@@ -23,7 +23,7 @@
     clip-path: ellipse(135% 100% at 50% -10%);
     min-height: 400px;
     overflow: hidden;
-   
+
 
     @include media-breakpoint-up(md) {
       clip-path: ellipse(100% 100% at 50% -10%);
@@ -42,9 +42,14 @@
     right: 0;
     padding: 100px 15px;
     color: $color-white;
-z-index: 1;
+    z-index: 1;
+
     @include media-breakpoint-up(md) {
-      top: 67%;
+      top: 32%
+    }
+
+    @include media-breakpoint-up(lg) {
+      top: 50%
     }
   }
 
@@ -126,8 +131,11 @@ z-index: 1;
 
   &-bottom {
     width: 100%;
-    height: 120px;
+    height: 35px;
     background-image: linear-gradient($color-light-green, $color-white);
+    @include media-breakpoint-up(sm){
+      height: 120px;
+    }
   }
 }
 
@@ -167,29 +175,37 @@ z-index: 1;
   }
 
   &-howstart {
+    justify-content: center;
+
     @include media-breakpoint-up(sm) {
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
 
   &-start {
+    justify-content: center;
+
     @include media-breakpoint-up(sm) {
-      justify-content: start;
+      justify-content: flex-start;
     }
   }
 
   &-card {
-    padding-top: 25px;
     margin-bottom: 25px;
-@include media-breakpoint-up(md){
-  margin-bottom: 0;
-}
-    &:hover {
-      box-shadow: 0px 0px 3px 1px $color-cyan;
-      border-radius: 25px;
-      transition: 0.4s all ease-in-out;
- 
+
+    a {
+      padding: 25px;
+
+      &:hover {
+        background: #00e1b112;
+        box-shadow: 0px 0px 4px 2px $color-green;
+      }
     }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+
   }
 
   &-cardimg {
@@ -239,9 +255,13 @@ z-index: 1;
     background-color: transparent;
     @include center;
     padding-top: 20px;
-    width: 260px;
+    width: 100%;
     position: relative;
     height: 302px;
+
+    @include media-breakpoint-up(lg) {
+      width: 260px;
+    }
 
     &:hover {
       border-radius: 30px;
@@ -275,9 +295,11 @@ z-index: 1;
   padding-top: 200px;
   padding-bottom: 126px;
   position: relative;
-@include media-breakpoint-up(md){
-  padding-top: 478px;
-}
+
+  @include media-breakpoint-up(md) {
+    padding-top: 478px;
+  }
+
   &-heading {
     @include fontsize-medium;
     font-weight: 800;
@@ -425,9 +447,11 @@ z-index: 1;
     margin-bottom: 10px;
     padding: 0 20px;
     z-index: 30;
+
     @include media-breakpoint-up(sm) {
-      width: 56%;
+      width: 90%;
     }
+
     @include media-breakpoint-up(md) {
       width: 80%;
       @include fontsize-larger;
@@ -438,6 +462,7 @@ z-index: 1;
   &-heading span {
     color: $color-tomato;
   }
+
   &-subheading {
     width: 53%;
     font-size: 18px;
@@ -471,7 +496,8 @@ z-index: 1;
     background-image: url("../images/playbtn.png");
     background-repeat: no-repeat;
     width: 11%;
-    height: 21%;;
+    height: 21%;
+    ;
     position: absolute;
     left: 0%;
     right: 0%;
@@ -482,6 +508,7 @@ z-index: 1;
     background-position: center;
     opacity: 1;
     transition: opacity 400ms;
+    cursor: pointer;
   }
 
   &-playvideo[hidden] {
@@ -693,7 +720,7 @@ z-index: 1;
 
   &-tooltip {
     position: relative;
-    width: 329px;
+
     display: inline-block;
     border: 5px solid $color-blue;
     background: transparent;
@@ -702,6 +729,10 @@ z-index: 1;
     padding: 35px 35px 20px 35px;
     height: fit-content;
     margin-bottom: 33px;
+
+    @include media-breakpoint-up(lg) {
+      width: 329px;
+    }
   }
 
   &-text {
@@ -800,7 +831,7 @@ z-index: 1;
     flex-direction: column;
     align-items: center;
     padding-top: 0;
-   
+
   }
 
   .container h2 {

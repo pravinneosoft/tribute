@@ -3,12 +3,11 @@
   padding: 80px 30px 15px 30px;
 
   &-logo {
-      @include center;
-      margin-bottom: 35px;
-      @include media-breakpoint-up(sm) {
-text-align: initial;
-margin-bottom: 5px;
-      }
+    @include center;
+    @include media-breakpoint-up(sm) {
+      text-align: initial;
+      margin-bottom: 5px;
+    }
   }
 
   &-list {
@@ -36,6 +35,9 @@ margin-bottom: 5px;
     font-family: $secondary-font;
     @include fontsize;
     color: $color-white;
+    &:hover{
+      color: $color-green;
+    }
   }
 
   &-signup {
@@ -48,7 +50,7 @@ margin-bottom: 5px;
     color: $color-green;
     margin-bottom: 27px;
     margin-top: 36px;
-   @include center;
+    @include center;
 
     @include media-breakpoint-up(md) {
       text-align: start;
@@ -62,7 +64,7 @@ margin-bottom: 5px;
     color: $color-white;
     font-size: 11px;
     margin: 0;
-   @include center;
+    @include center;
 
     @include media-breakpoint-up(md) {
       @include center;
@@ -72,26 +74,20 @@ margin-bottom: 5px;
   &-icons {
     margin: 0 -8px;
     padding: 0;
-
     li {
       padding: 0 8px;
     }
-
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 10px 0;
 
     @include media-breakpoint-up(sm) {
       text-align: end;
-      display: flex;
-      justify-content: flex-end;
       column-gap: 18px;
       color: $color-white;
     }
 
     @include media-breakpoint-up(md) {
-      text-align: end;
-      display: flex;
       justify-content: flex-end;
       column-gap: 18px;
       color: $color-white;
@@ -108,10 +104,12 @@ margin-bottom: 5px;
 
   &-order {
     order: 2;
+
     @include media-breakpoint-up(sm) {
       order: initial;
     }
   }
+
   &-logoimg {
     width: 143px;
   }
